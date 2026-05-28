@@ -7,10 +7,10 @@ const createStudent = async (req: any, res: any) => {
     const student = new Student(req.body);
     const savedStudent = await student.save();
     res.json(savedStudent);
-  } catch (error) {
+  } catch (error: any) {
     res
       .status(500)
-      .json({ message: "Sorry, we are facing some internal issues" });
+      .json(error);
   }
 }
 
