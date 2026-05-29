@@ -1,0 +1,2 @@
+{"level":"error","message":"\"course\" must be one of [MERN, Java, Python, DevOps, AI]","timestamp":"2026-05-29T03:25:45.737Z"}
+{"body":{"address":{"city":"Pune","pincode":418346,"state":"Maharashtra"},"age":60,"course":"Java pyhon","email":"anil@yallo.com","name":"Rahul","skills":["Javascript","Java","React","Node js"]},"level":"error","message":"\"course\" must be one of [MERN, Java, Python, DevOps, AI]","method":"POST","timestamp":"2026-05-29T03:26:28.657Z","url":"/students"}

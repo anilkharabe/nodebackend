@@ -1,5 +1,6 @@
 import express from "express"; // ecma import
-import studentRouter from './src/routes/studentRoutes'
+import studentRouter from './src/routes/studentRoutes';
+import loggerMiddleware from './src/middleware/loggerMiddleware';
 
 const app = express();
 
@@ -8,11 +9,6 @@ app.use(express.json());
 
 
 // custum middleware
-const loggerMiddleware = (req: any, res: any, next: any)=>{
-    console.log("logger middleware is called")
-    next();
-}
-
 app.use(loggerMiddleware)
 
 app.use('/students', studentRouter)
